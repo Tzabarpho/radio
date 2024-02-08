@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main - Radio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+        body {
+            font-size: 2vmin;
+            font-family: 'Varela Round';
+            background-image: url(background.bmp);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .card {
+            background-image: linear-gradient(0deg, transparent, rgba(255, 255, 255, 0.15));
+            color: white;
+            backdrop-filter: blur(10px);
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.314);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+
+        #test-randomizer {
+            position: absolute;
+            transform: translateX(-50%);
+            left: 50%;
+            top: 5%;
+            width: 25vw;
+            padding: 1vw;
+        }
+
+        #test-randomizer span {
+            margin-top: 0.5vw;
+            margin-bottom: 0.5vw;
+        }
+        
+        #make-test {
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            width: 80px;
+            height: 30px;
+            margin: 10px;
+            background-image: linear-gradient(45deg, rgb(255, 0, 0), rgb(255, 98, 0));
+            background-size: 200%;
+            color: white;
+            transition: 0.2s;
+        }
+        
+        #make-test:hover {
+            background-position: 100% 100%;
+        }
+
+        #existing-tests {
+            position: absolute;
+            right: 2.5%;
+            top: 5%;
+            width: 25vw;
+            padding: 1vw;
+        }
+
+        #existing-tests a {
+            font-size: 1rem;
+            color: darkturquoise;
+        }
+
+        input[type=checkbox] {
+            
+        }
+    </style>
+</head>
+<body>
+    <form class="card" id="test-randomizer">
+        מבחן אקראי:
+        <span><input type="checkbox" name="a">נהלים ב</span>
+        <span><input type="checkbox" name="b">חשמל בסיסי ג</span>
+        <span><input type="checkbox" name="c">חשמל בסיסי ב</span>
+        <button type="submit" id="make-test">צור מבחן</button>
+    </form>
+
+    <div class="card" id="existing-tests">
+        משימות:
+        <a href="https://youtu.be/dQw4w9WgXcQ">אמא שלך</a>
+        <a href="https://youtu.be/dQw4w9WgXcQ">אמא שלך 2</a>
+        <a href="https://youtu.be/dQw4w9WgXcQ">אמא שלך 3</a>
+    </div>
+</body>
+</html>
