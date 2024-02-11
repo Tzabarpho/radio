@@ -8,10 +8,13 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
-        body {
-            font-size: 2.5vmin;
+        * {
             color: white;
+            font-size: 2.5vmin;
             font-family: 'Varela Round';
+        }
+
+        body {
             background-image: url(background.bmp);
             background-size: cover;
             background-repeat: no-repeat;
@@ -33,6 +36,15 @@
             width: 100%;
             height: 100%
         }
+
+        td textarea {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            resize: none;
+            width: 100%;
+            height: 100%;
+        }
     </style>
 <body>
     <table><tbody>
@@ -48,7 +60,7 @@
             <th>מחיקה</th>
         </tr>
         <tr>
-            <td>מהן גבולותיה של צפונבוניה?</td>
+            <td><textarea readonly>מהן גבולותיה של צפונבוניה?</textarea></td>
             <td>from the river to the sea</td>
             <td>from the river to רמת השרון</td>
             <td>from the river to יפו</td>

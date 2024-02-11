@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Radio</title>
+</head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+        body {
+            font-size: 2vmin;
+            color: white;
+            font-family: 'Varela Round';
+            background-image: url(background.bmp);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #question {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            width: 40vw;
+            height: 20vw;
+            margin: 5vh auto;
+            backdrop-filter: blur(10px);
+            border-radius: 2vw;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.314);
+        }
+
+        #options {
+            display: flex;
+            height: 30%;
+            width: 100%;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .option {
+            display: flex;
+            align-items: center;
+            margin: 1%;
+            padding: 2%;
+            border-radius: 10px;
+            border: none;
+            background-color: #00000044;
+            box-shadow: 0 0 8px #0000003e;
+        }
+
+        .selected {
+            display: flex;
+            flex-direction: row;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            outline: 1px solid white;
+            background-color: #ff00001e;
+        }
+
+        .correct {
+            background-color: #00ff0050;
+        }
+
+        .selected:not(.correct):before {
+            content: '';
+            margin-left: 10px;
+            display: inline-block;
+            transform: rotate(45deg);
+            height: 0;
+            width: 0;
+            height: 18px;
+            width: 3px;
+            border-left: 5px solid #ff2050;
+            border-right: 5px solid #ff2050;
+        }
+
+        .selected.correct:before {
+            content: '';
+            margin-left: 10px;
+            display: inline-block;
+            transform: rotate(45deg);
+            height: 0;
+            width: 0;
+            height: 18px;
+            width: 9px;
+            border-bottom: 5px solid #305f00;
+            border-right: 5px solid #305f00;
+        }
+    </style>
+<body>
+    <div id="question">
+        מהו אות הקריאה I/4X4AA ?
+        <div id="options">
+            <div class="option correct">זהו אות קריאה שאסור לשימוש באיטליה</div>
+            <div class="option">מבנה אות קריאה כזה הוא בלתי אפשרי</div>
+            <div class="option selected">מדובר בחובב רדיו איטלקי המשדר מישראל</div>
+            <div class="option">מדובר בחובב רדיו ישראלי המשדר מאיטליה</div>
+        </div>
+    </div>
+    <div id="question">
+        מהו אות הקריאה I/4X4AA ?
+        <div id="options">
+            <div class="option correct selected">זהו אות קריאה שאסור לשימוש באיטליה</div>
+            <div class="option">מבנה אות קריאה כזה הוא בלתי אפשרי</div>
+            <div class="option">מדובר בחובב רדיו איטלקי המשדר מישראל</div>
+            <div class="option">מדובר בחובב רדיו ישראלי המשדר מאיטליה</div>
+        </div>
+    </div>
+</body>
+</html>
