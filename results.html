@@ -4,101 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz - Radio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="results.css">
 </head>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-
-        body {
-            color: white;
-            font-family: 'Varela Round';
-            background-image: url(background.png);
-            background-attachment: fixed;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        .question {
-            font-size: 3vmin;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 40vw;
-            margin: 5vh auto;
-            backdrop-filter: blur(10px);
-            border-radius: 2vw;
-            padding: 30px;
-            text-align: center;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.314);
-        }
-
-        .question img {
-            margin-top: 5%;
-            width: 100%;
-        }
-
-        .options {
-            font-size: 2vmin;
-            margin-top: 7.5%;
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            justify-content: space-evenly;
-        }
-
-        .option {
-            display: flex;
-            align-items: center;
-            margin: 1%;
-            padding: 2%;
-            border-radius: 10px;
-            border: none;
-            background-color: #00000044;
-            box-shadow: 0 0 8px #0000003e;
-        }
-
-        .selected {
-            display: flex;
-            flex-direction: row;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            outline: 1px solid white;
-            background-color: #ff00001e;
-        }
-
-        .correct {
-            background-color: #00ff0030;
-        }
-
-        .selected:not(.correct)::after {
-            content: '';
-            position: absolute;
-            left: 10%;
-            display: inline-block;
-            transform: rotate(45deg);
-            height: 0;
-            width: 0;
-            height: 18px;
-            width: 3px;
-            border-left: 5px solid #ff2050;
-            border-right: 5px solid #ff2050;
-        }
-
-        .selected.correct::after {
-            content: '';
-            position: absolute;
-            left: 10%;
-            display: inline-block;
-            transform: rotate(45deg);
-            height: 0;
-            width: 0;
-            height: 18px;
-            width: 9px;
-            border-bottom: 5px solid #70e000;
-            border-right: 5px solid #70e000;
-        }
-    </style>
 <body>
     ציון סופי: 50
-    <div class="question">
+    <div class="question card">
         מהו אות הקריאה I/4X4AA ?
         <div class="options">
             <div class="option">זהו אות קריאה שאסור לשימוש באיטליה</div>
@@ -107,7 +18,7 @@
             <div class="option correct">מדובר בחובב רדיו ישראלי המשדר מאיטליה</div>
         </div>
     </div>
-    <div class="question">
+    <div class="question card">
         מהו אות הקריאה I/4X4AA ?
         <img src="img.png">
         <div class="options">

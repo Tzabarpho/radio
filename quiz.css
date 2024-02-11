@@ -1,0 +1,69 @@
+#question {
+    font-size: 3vmin;
+    display: flex;
+    width: 40vw;
+    height: 20vw;
+    margin: 5% auto;
+}
+
+#options {
+    font-size: 2vmin;
+    margin-top: 5%;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    margin: 1%;
+    padding: 2%;
+    border-radius: 10px;
+    border: none;
+    background-color: #00000044;
+    cursor: pointer;
+    transition: 0.2s;
+    transition-delay: 0.05s;
+    box-shadow: 0 0 8px #0000003e;
+}
+
+#options:not(:has(:hover))>.option:has(:checked), .option:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff1e;
+}
+
+#next {
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 10px;
+    width: 15%;
+    background-image: linear-gradient(45deg, rgb(255, 0, 0), rgb(255, 98, 0));
+    background-size: 200%;
+    color: white;
+    box-shadow: 0 0 8px #0000003e;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#next:hover {
+    color: white;
+    background-position: 100% 100%;
+}
+
+.option input[type=radio] {
+    appearance: none;
+    outline: 1px solid white;
+    border-radius: 50%;
+    width: 2vmin;
+    height: 2vmin;
+    transition: 0.2s;
+    margin-left: 1vmin;
+}
+
+.option input[type=radio]:checked {
+    border: 1vmin solid rgb(126, 126, 126);
+    background-color: rgb(126, 126, 126);
+}
