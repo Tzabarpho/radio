@@ -9,22 +9,23 @@
         @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
         body {
-            font-size: 2vmin;
             color: white;
             font-family: 'Varela Round';
-            background-image: url(background.bmp);
+            background-image: url(background.png);
+            background-attachment: fixed;
             background-size: cover;
             background-repeat: no-repeat;
         }
 
         #question {
+            font-size: 3vmin;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
             width: 40vw;
             height: 20vw;
-            margin: auto;
+            margin: 5% auto;
             backdrop-filter: blur(10px);
             border-radius: 2vw;
             padding: 30px;
@@ -33,9 +34,9 @@
         }
 
         #options {
-            margin-top: 25px;
+            font-size: 2vmin;
+            margin-top: 5%;
             display: flex;
-            height: 30%;
             width: 100%;
             flex-direction: column;
             justify-content: space-evenly;
@@ -58,7 +59,6 @@
         #options:not(:has(:hover))>.option:has(:checked), .option:hover {
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             background-color: #ffffff1e;
-            color: black;
         }
 
         #next {
@@ -67,7 +67,6 @@
             outline: none;
             margin-top: 10px;
             width: 15%;
-            height: 10%;
             background-image: linear-gradient(45deg, rgb(255, 0, 0), rgb(255, 98, 0));
             background-size: 200%;
             color: white;
@@ -91,7 +90,7 @@
         }
 
         .option input[type=radio]:checked {
-            border: 1vmin solid black;
+            border: 1.1vmin solid rgb(126, 126, 126);
         }
     </style>
 <body>
