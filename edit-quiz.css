@@ -1,0 +1,35 @@
+.card {
+    position: absolute;
+    top: 5%;
+}
+
+.edit-quiz {
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.edit-quiz span {
+    margin: 0.5vh 0;
+}
+
+input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+}
+
+select {
+    background-color: #00000050;
+    padding: 0.25vw;
+    border: none;
+    border-radius: 5px;
+}
+
+option {
+    color: black;
+}
+
+.publish-quiz {
+    left: 5%;
+}

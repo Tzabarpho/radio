@@ -1,6 +1,5 @@
-#login {
+.login {
     position: absolute;
-    font-size: 3vmin;
     transform: translateX(-50%);
     top: 15%;
     left: 50%;
@@ -8,7 +7,6 @@
 }
 
 input {
-    font-size: 2vmin;
     background-color: transparent;
     outline: none;
     border: none;

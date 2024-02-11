@@ -1,0 +1,215 @@
+* {
+    color: white;
+    font-size: 2vmin;
+    font-family: 'Varela Round';
+}
+
+th, td {
+    max-width: 10vw;
+    backdrop-filter: blur(5px);
+    text-align: center;
+    padding: 0.5vw;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.314);
+    background-color:#00000050;
+}
+
+table {
+    margin: 1% auto;
+}
+
+td textarea {
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    resize: none;
+}
+
+td input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+select {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+    appearance: none;
+}
+
+option {
+    color: black;
+}
+
+.image-actions {
+    
+}
+
+.gg-trash {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 10px;
+    height: 12px;
+    border: 2px solid transparent;
+    box-shadow:
+    0 0 0 2px,
+    inset -2px 0 0,
+    inset 2px 0 0;
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    margin-top: 4px
+   }
+   
+   .gg-trash::after,
+   .gg-trash::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+   }
+   
+   .gg-trash::after {
+    background: currentColor;
+    border-radius: 3px;
+    width: 16px;
+    height: 2px;
+    top: -4px;
+    left: -5px
+   }
+   
+   .gg-trash::before {
+    width: 10px;
+    height: 4px;
+    border: 2px solid;
+    border-bottom: transparent;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    top: -7px;
+    left: -2px
+   } 
+
+   .gg-pen {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: rotate(-45deg) scale(var(--ggs,1));
+    width: 14px;
+    height: 4px;
+    border-right: 2px solid transparent;
+    box-shadow:
+    0 0 0 2px,
+    inset -2px 0 0;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    margin-right: -2px
+   }
+   
+   .gg-pen::after,
+   .gg-pen::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+   }
+   
+   .gg-pen::before {
+    background: currentColor;
+    border-left: 0;
+    right: -6px;
+    width: 3px;
+    height: 4px;
+    border-radius: 1px;
+    top: 0
+   }
+   
+   .gg-pen::after {
+    width: 8px;
+    height: 7px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-right: 7px solid;
+    left: -11px;
+    top: -2px
+   } 
+
+   .gg-math-plus,
+   .gg-math-plus::after {
+    display: block;
+    box-sizing: border-box;
+    background: currentColor;
+    border-radius: 10px
+   }
+   
+   .gg-math-plus {
+    margin-top: -2px;
+    position: relative;
+    transform: scale(var(--ggs,1));
+    width: 16px;
+    height: 2px
+   }
+   
+   .gg-math-plus::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 16px;
+    top: -7px;
+    left: 7px
+   } 
+
+   .gg-eye {
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 24px;
+    height: 18px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    overflow: hidden;
+    box-sizing: border-box
+   }
+   
+   .gg-eye::after,
+   .gg-eye::before {
+    content: "";
+    display: block;
+    border-radius: 100px;
+    position: absolute;
+    box-sizing: border-box
+   }
+   
+   .gg-eye::after {
+    top: 2px;
+    box-shadow:
+    inset 0 -8px 0 2px,
+    inset 0 0 0 2px;
+    width: 24px;
+    height: 24px
+   }
+   
+   .gg-eye::before {
+    width: 8px;
+    height: 8px;
+    border: 2px solid;
+    bottom: 4px;
+    left: 8px
+   } 

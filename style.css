@@ -18,6 +18,7 @@ body {
 }
 
 .card {
+    font-size: 3vmin;
     background-image: linear-gradient(#ffffff0e, transparent);
     backdrop-filter: blur(10px);
     box-shadow: 0px 0px 1vw rgba(0, 0, 0, 0.314);
@@ -27,6 +28,10 @@ body {
     text-align: center;
     align-items: center;
     padding: 1%;
+}
+
+.card * {
+    font-size: 2vmin;
 }
 
 button {

@@ -5,68 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz - Radio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="table.css">
 </head>
-    <style>
-        * {
-            color: white;
-            font-size: 2vmin;
-            font-family: 'Varela Round';
-        }
-        
-        th, td {
-            max-width: 10vw;
-            backdrop-filter: blur(5px);
-            text-align: center;
-            padding: 0.5vw;
-            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.314);
-            background-color:#00000050;
-        }
-        
-        table {
-            margin: 1% auto;
-        }
-
-        td textarea {
-            text-align: center;
-            background-color: transparent;
-            border: none;
-            outline: none;
-            width: 100%;
-            height: 100%;
-            resize: none;
-        }
-
-        td input {
-            background-color: transparent;
-            border: none;
-            outline: none;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-        }
-
-        input[type=number] {
-            -moz-appearance: textfield;
-        }
-
-        input[type=number]::-webkit-inner-spin-button,
-        input[type=number]::-webkit-outer-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
-
-        select {
-            background-color: transparent;
-            border: none;
-            width: 100%;
-            height: 100%;
-            appearance: none;
-        }
-        
-        option {
-            color: black;
-        }
-    </style>
 <body>
     <table><tbody>
         <tr>
@@ -77,6 +17,7 @@
             <th>תשובה 4</th>
             <th>תשובה נכונה</th>
             <th>נושא</th>
+            <th>תמונה</th>
             <th>עריכה</th>
             <th>מחיקה</th>
         </tr>
@@ -91,6 +32,13 @@
                 <option>אלקטרוניקה בסיסית ב</option>
                 <option>אלקטרוניקה בסיסית ג</option>
             </select></td>
+            <td class="image-actions">
+                <button><span class="gg-math-plus"></span></button>
+                <button><span class="gg-eye"></span></button>
+                <button><span class="gg-pen"></span></button>
+                <button><span class="gg-trash"></span></button>
+
+            </td>
             <td><button>עריכה</button></td>
             <td><button class="disabled">מחיקה</button></td>
         </tr>
