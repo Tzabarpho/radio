@@ -2,25 +2,26 @@
     font-size: 2vmin;
 }
 
-#test-randomizer {
+.test-randomizer {
     transform: translateX(-50%);
     left: 50%;
     width: 25vw;
 }
 
-#test-randomizer span {
+.test-randomizer label {
     margin-top: 0.5vw;
     margin-bottom: 0.5vw;
     display: flex;
+    align-items: center;
     gap: 2px;
 }
 
-#existing-tests {
+.existing-tests {
     right: 2.5%;
     width: 25vw;
 }
 
-#existing-tests a {
+.existing-tests a {
     font-size: 1rem;
     color: darkturquoise;
 }
@@ -30,8 +31,8 @@ input[type=checkbox] {
     width: 10px;
     height: 10px;
     outline: 1px solid white;
-    transition: 0.5s;
-    border-radius: 1px;
+    transition: 0.25s;
+    border-radius: 25%;
 }
 
 input[type=checkbox]::after {
@@ -42,15 +43,15 @@ input[type=checkbox]::after {
     width: 0;
     border-bottom: 0 solid white;
     border-right: 0 solid white;
-    transition: 0.5s;
+    transition: 0.25s;
 }
 
 input[type=checkbox]:checked {
     background-color: black;
+    outline: 1px solid gray;
 }
 
 input[type=checkbox]:checked::after {
-    display: inline-block;
     transform: rotate(45deg) translate(-45%, -45%);;
     height: 12px;
     width: 6px;
@@ -59,7 +60,7 @@ input[type=checkbox]:checked::after {
     border-radius: 2px;
 }
 
-#navbar {
+.navbar {
     font-size: 1.5vw;
     position: sticky;
     display: flex;
@@ -72,7 +73,7 @@ input[type=checkbox]:checked::after {
     align-items: center;
 }
 
-#user {
+.user {
     left: 2.5%;
     width: 20vw;
 }

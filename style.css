@@ -60,6 +60,11 @@ input[type=text], input[type=password] {
     outline: none;
     border: none;
     margin: 5% auto;
+    border-bottom: 1px solid gray;
+    transition: 0.5s;
+}
+
+input[type=text]:focus, input[type=password]:focus {
     border-bottom: 1px solid white;
 }
 
