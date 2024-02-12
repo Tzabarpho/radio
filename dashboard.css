@@ -1,4 +1,4 @@
-th, td {
+.table th, .table td {
     backdrop-filter: blur(5px);
     text-align: center;
     padding: 0.5vw;
@@ -6,13 +6,13 @@ th, td {
     background-color:#00000050;
 }
 
-table {
+.table {
     font-size: 2vmin;
     max-width: 95vw;
     margin: 1% auto;
 }
 
-td textarea {
+.table textarea {
     text-align: center;
     background-color: transparent;
     border: none;
@@ -21,7 +21,8 @@ td textarea {
     resize: none;
 }
 
-td input {
+.table input[type=number] {
+    -moz-appearance: textfield;
     background-color: transparent;
     border: none;
     outline: none;
@@ -30,22 +31,18 @@ td input {
     text-align: center;
 }
 
-input[type=number] {
-    -moz-appearance: textfield;
-}
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
+.table input[type=number]::-webkit-inner-spin-button,
+.table input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
-select {
+.table select {
     background-color: transparent;
     border: none;
 }
 
-option {
+.table option {
     color: black;
 }
 
@@ -53,7 +50,7 @@ option {
     display: flex;
 }
 
-tr:last-child td {
+.table tr:last-child td {
     opacity: 0.8;
 }
 
