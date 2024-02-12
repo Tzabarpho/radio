@@ -54,3 +54,11 @@ button.disabled, button:disabled {
     opacity: 0.5;
     cursor: default;
 }
+
+input[type=text], input[type=password] {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    margin: 5% auto;
+    border-bottom: 1px solid white;
+}
