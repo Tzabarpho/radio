@@ -30,6 +30,10 @@
     border-radius: 25%;
 }
 
+.test-randomizer input[type=checkbox]:disabled {
+    outline: 1px solid gray;
+}
+
 .test-randomizer input[type=checkbox]::after {
     content: '';
     display: inline-block;

@@ -20,13 +20,16 @@
     border-radius: 10px;
     border: none;
     background-color: #00000044;
-    cursor: pointer;
     transition: 0.2s;
     transition-delay: 0.05s;
     box-shadow: 0 0 8px #0000003e;
 }
 
-.options:not(:has(:hover))>.option:has(:checked), .option:hover {
+.questionContainer .option {
+    cursor: pointer;
+}
+
+.questionContainer .options:not(:has(:hover))>.option:has(:checked), .questionContainer .option:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #ffffff1e;
 }
@@ -44,4 +47,49 @@
 .option input[type=radio]:checked {
     border: 1vmin solid rgb(126, 126, 126);
     background-color: rgb(126, 126, 126);
+}
+
+.question img {
+    margin-top: 5%;
+    width: 100%;
+}
+
+.selected {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    outline: 1px solid white;
+    background-color: #ff00001e;
+}
+
+.correct {
+    background-color: #00ff0030;
+}
+
+.selected:not(.correct)::after {
+    content: '';
+    position: absolute;
+    left: 6%;
+    display: inline-block;
+    transform: rotate(45deg);
+    height: 0;
+    width: 0;
+    height: 1vw;
+    width: 0.2vw;
+    border-left: 0.3vw solid #ff2050;
+    border-right: 0.3vw solid #ff2050;
+}
+
+.selected.correct::after {
+    content: '';
+    position: absolute;
+    left: 7%;
+    display: inline-block;
+    transform: rotate(45deg) translate(-50%, 0);
+    height: 0;
+    width: 0;
+    height: 1vw;
+    width: 0.5vw;
+    border-bottom: 5px solid #70e000;
+    border-right: 5px solid #70e000;
 }

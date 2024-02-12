@@ -68,6 +68,15 @@ input[type=text]:focus, input[type=password]:focus {
     border-bottom: 1px solid white;
 }
 
+select {
+    background-color: transparent;
+    border: none;
+}
+
+option {
+    color: black;
+}
+
 .navbar {
     font-size: 1.5vw;
     position: sticky;
