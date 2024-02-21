@@ -12,21 +12,13 @@
     <div class="question card">
         מהו אות הקריאה I/4X4AA ?
         <div class="options">
-            <div class="option"><input type="radio" name="option">זהו אות קריאה שאסור לשימוש באיטליה</div>
-            <div class="option"><input type="radio" name="option">מבנה אות קריאה כזה הוא בלתי אפשרי</div>
-            <div class="option"><input type="radio" name="option">מדובר בחובב רדיו איטלקי המשדר מישראל</div>
-            <div class="option"><input type="radio" name="option">מדובר בחובב רדיו ישראלי המשדר מאיטליה</div>
+            <label class="option"><input type="radio" name="option">זהו אות קריאה שאסור לשימוש באיטליה</label>
+            <label class="option"><input type="radio" name="option">מבנה אות קריאה כזה הוא בלתי אפשרי</label>
+            <label class="option"><input type="radio" name="option">מדובר בחובב רדיו איטלקי המשדר מישראל</label>
+            <label class="option"><input type="radio" name="option">מדובר בחובב רדיו ישראלי המשדר מאיטליה</label>
         </div>
-        <button>הבא</button>
+        <button>הבא או הקודם או כל דבר שכזה אני יכול להמשיך לכתוב בתוך הכפתור הזה וזה הכול יעבוד בלי שום בעייה זה ימשיך ככה ולא יפסיק בבקשה אל תפסיק להוסיף שורות</button>
     </div>
 </div>
-
-    <script>
-        document.querySelectorAll('.option').forEach(option => {
-            option.addEventListener('click', () => {
-                option.querySelector('input').click();
-            })
-        })
-    </script>
 </body>
 </html>

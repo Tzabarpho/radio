@@ -77,13 +77,26 @@ option {
     color: black;
 }
 
+input[type=number] {
+    -moz-appearance: textfield;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 .navbar {
     font-size: 1.5vw;
     position: sticky;
     display: flex;
     background-color: #ffffff1f;
     width: 100%;
-    height: 4vw;
+    min-height: 4vw;
     backdrop-filter: blur(5px);
     box-shadow: 0 5px 5px #00000020;
     justify-content: space-evenly;
